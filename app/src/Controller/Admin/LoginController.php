@@ -8,11 +8,11 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class LoginController extends AbstractController
 {
-    #[Route('/login', name: 'app_home')]
+    #[Route('/login', name: 'app_login')]
     public function index(): Response
     {
         return $this->render('Admin/login/login.html.twig', [
-            'controller_name' => 'HomeController',
+            'controller_name' => 'LoginController',
         ]);
     }
 }

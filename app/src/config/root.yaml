@@ -1,0 +1,9 @@
+parameters:
+  httpApi: 'http://127.0.0.1:42041'
+
+
+  get_news_car:
+    get: '/news/car'
+    post:
+    put:
+    delete:

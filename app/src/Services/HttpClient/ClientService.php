@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace App\Services\HttpClient;
 
-use App\Services\ParameterBagInterface;
+
 use App\Services\HttpClient\Exception\DataEmptyException;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
@@ -17,7 +17,6 @@ class ClientService implements ClientServiceInterface
     private $client;
 
     /**
-     * @param ParameterBagInterface $parameterBag
      * @param HttpClientInterface $client
      */
     public function __construct(

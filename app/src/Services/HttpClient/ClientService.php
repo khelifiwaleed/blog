@@ -48,8 +48,8 @@ class ClientService implements ClientServiceInterface
             }
             $responce['statusCode'] = $response->getStatusCode();// $statusCode = 200
             $responce['contentType'] = $response->getHeaders()['content-type'][0];// $contentType = 'application/json'
-            $responce['bodyJson'] = $response->getContent();// $content = '{"id":521583, "name":"symfony-docs", ...}'
-            $responce['content'] = $response->toArray();// $content = ['id' => 521583, 'name' => 'symfony-docs', ...]
+            $responce['bodyJson'] = $response->getContent();
+            $responce['content'] = $response->toArray();
             $responce['headers'] = $response->getHeaders();
         } catch (\Exception $exception) {
             $responce['statusCode'] = self::DEFAULT_VALUE['catch_status'];

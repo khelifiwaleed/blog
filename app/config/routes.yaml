@@ -1,5 +1,12 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+#controllers:
+#    resource:
+#        path: ../src/Controller/
+#        namespace: App\Controller
+#    type: attribute
+
+
+#    En a déclenchant l'événement dans ce route
+dispatch_my_event_now:
+    path: dispatch_event/
+    controller: App\Controller\DispatchEventController
+

@@ -41,9 +41,9 @@ class NewCarsController extends AbstractController
         $httpApi = $this->parameterBag->get('httpApi');
         $url = $httpApi.$urlNewsCar['get'];
         $content = $this->httpClient->getClient($url);
-        dd($content);
+
         return $this->render('Site/new_cars/new_cars.html.twig', [
-            'data' => $content['content']
+            'data' => $content['content']??NULL
         ]);
     }
 }

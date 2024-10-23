@@ -9,9 +9,11 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Component\Routing\Attribute\Route;
 
 class DispatchEventController extends AbstractController
 {
+    #[Route('/dispatch_event', name: 'dispatch_event')]
     public function __invoke(
         EventDispatcherInterface $eventDispatcher,
         Request                  $request
